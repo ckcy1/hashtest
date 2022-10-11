@@ -6,7 +6,7 @@ fn main() {
     for word in text.split_whitespace(){
         let count = map.entry(word).or_insert(0);
         println!("{}",count);
-        *count += 1;
+        *count += 2;
     }
     println!("{:?}",map)
 }
